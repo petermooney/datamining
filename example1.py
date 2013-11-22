@@ -14,18 +14,26 @@
 
 import csv
 
-
-def readCSVFile(filename):
+# we provide the filename to our CSV File
+# remember that all the column indices are zero based - so the first column is index 0, second is index 1, etc
+# we will just perform a simple formatted print out of the name, category, and country where the UNESCO
+# Heritage site is located.
+def readAndPrintContentFromCSVFile(filename):
 
 	with open(filename, 'r') as csvfile:
 		csvreader = csv.reader(csvfile, delimiter=',')
 		for row in csvreader:
-			print ', '.join(row)
+			name = row[2]
+			category = row[9]
+			country = row[10]
+			region = row[11]
 			
+			print "-----------------"
+			print "Name: {}\nCategory: {}\nCountry: {}".format(name,category,country)
 			
 def main():
 	# we will read in the CSV file with the list of Unesco Heritage Sites world wide. 
-	readCSVFile("unesco.csv")
+	readAndPrintContentFromCSVFile("unesco.csv")
 	
 	
 main()
