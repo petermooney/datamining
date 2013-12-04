@@ -22,7 +22,7 @@ import csv
 def readAndPrintContentFromCSVFile(filename):
 
 	with open(filename, 'r') as csvfile:
-		csvreader = csv.reader(csvfile, delimiter=',')
+		csvreader = csv.reader(csvfile, delimiter='\t')
 		for row in csvreader:
 			name = row[2]
 			category = row[9]
