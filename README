@@ -1,5 +1,0 @@
-This is a respository of Python scripts used to support a lecture on using Python for Data Mining. 
-
-USING THE SHAPEFILES
-
-Shapefiles are not just one file. They are a composite collection of four or five files. When you download the 'shapefiles' for either UK and Ireland borders or OpenStreetMap Roads in Greater Dublin please remember that you will need to download all of the files in that folder. Otherwise when you try to load this file into a GIS such as QGIS it will not work. 
