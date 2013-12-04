@@ -27,7 +27,7 @@ def readAndPrintContentFromCSVFile(filenameIn,filenameOut):
 	outputFile.write("Name\tCategory\tCountry\n") # this is the header line
 	
 	with open(filenameIn, 'r') as csvfile:
-		csvreader = csv.reader(csvfile, delimiter=',')
+		csvreader = csv.reader(csvfile, delimiter='\t')
 		for row in csvreader:
 			name = row[2]
 			category = row[9]
@@ -38,6 +38,7 @@ def readAndPrintContentFromCSVFile(filenameIn,filenameOut):
 			outputFile.write("{}\t{}\t{}\n".format(name,category,country))
 		
 	outputFile.close() ## make sure to close the output file also. 	
+	
 def main():
 	# we will read in the CSV file with the list of Unesco Heritage Sites world wide. 
 	readAndPrintContentFromCSVFile("unesco.csv","MyUnescoList.csv")
