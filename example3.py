@@ -30,7 +30,7 @@ def readAndPrintQueryResultsFromCSVFile(filenameIn,filenameOut,chosenCategory):
 	outputFile.write("Name\tCategory\tCountry\n") # this is the header line
 	
 	with open(filenameIn, 'r') as csvfile:
-		csvreader = csv.reader(csvfile, delimiter=',')
+		csvreader = csv.reader(csvfile, delimiter='\t')
 		for row in csvreader:
 			name = row[2]
 			category = row[9]
@@ -50,5 +50,7 @@ def main():
 	# The output will be a tab separated file which will only list UNESCO Heritage sites
 	# which are in the 'Natural' Category 
 	readAndPrintQueryResultsFromCSVFile("unesco.csv","MyUnescoListNatural.csv","Natural")
+	
+	
 	print ("Processing is now finished ")
 main()
