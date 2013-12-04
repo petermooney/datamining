@@ -1,7 +1,9 @@
-This is a respository of Python scripts used to support a lecture on using Python for Data Mining. 
+<h1>Introduction</h1>
+This is a respository of Python scripts used to support a lecture on using Python for Data Mining. You can download and use these scripts for learning or teaching purposes. Please provide a link back to this repository if you do use them. 
 
-USING THE SHAPEFILES
+<strong>The purpose</strong> of this repository is to demonstrate some very simple examples of data mining (data extraction, manipulation/query, visualisation) using Python. The lecture notes provided and the source code should make it reasonably straightforward to get Python up and running and hence these examples. 
 
+<h2>Using the Shapefiles</h2>
 Shapefiles are not just one file. They are a composite collection of four or five files. When you download the 'shapefiles' for either UK and Ireland borders or OpenStreetMap Roads in Greater Dublin please remember that you will need to download all of the files in that folder. Otherwise when you try to load this file into a GIS such as QGIS it will not work. 
 
 Universal Traverse Mercator (UTM)
