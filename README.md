@@ -3,10 +3,13 @@ This is a respository of Python scripts used to support a lecture on using Pytho
 
 <strong>The purpose</strong> of this repository is to demonstrate some very simple examples of data mining (data extraction, manipulation/query, visualisation) using Python. The lecture notes provided and the source code should make it reasonably straightforward to get Python up and running and hence these examples. 
 
+The examples do not strive to be the most perfectly efficient pieces of code. Rather their aim is readability and clarity so that those students who do not wish to learn Python can understand the examples without getting confused by various aspects of what is a new programming language to them. 
+
+
 <h2>Using the Shapefiles</h2>
 Shapefiles are not just one file. They are a composite collection of four or five files. When you download the 'shapefiles' for either UK and Ireland borders or OpenStreetMap Roads in Greater Dublin please remember that you will need to download all of the files in that folder. Otherwise when you try to load this file into a GIS such as QGIS it will not work. 
 
-Universal Traverse Mercator (UTM)
+<h4>Universal Traverse Mercator (UTM)</h4>
 
 We use the very useful and simple to use library at https://pypi.python.org/pypi/utm for conversions from Latitude/Longitude to UTM. 
 
